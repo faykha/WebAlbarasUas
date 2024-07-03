@@ -1,0 +1,409 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    background-color: #444;
+}
+
+nav ul li {
+    display: inline-block;
+    position: relative;
+}
+
+nav ul li a {
+    display: block;
+    padding: 1rem;
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover, nav ul li .dropbtn:hover {
+    background-color: #555;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #444;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 1rem;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #555;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+main {
+    padding: 1rem;
+}
+
+#introduction, .culture, .cuisine {
+    margin-bottom: 2rem;
+    text-align: justify;
+    line-height: 1.6;
+}
+
+#tempat-wisata {
+    margin-top: 2rem;
+}
+
+.wisata-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.wisata {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    flex: 1 1 calc(33.333% - 1rem);
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.wisata img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.wisata h4 {
+    margin: 1rem 0 0.5rem;
+}
+
+.wisata p {
+    margin: 0;
+}
+
+.wisata a {
+    text-decoration: none; 
+    color: inherit; 
+}
+
+.wisata a:hover {
+    color: inherit; 
+}
+
+.wisata:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 0.5rem 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 0.875rem;
+}
+
+.btn-pesan {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    margin-top: 1.5rem;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-weight: bold;
+    text-align: center;
+}
+
+.btn-pesan:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.btn-pesan:active {
+    background-color: #004494;
+    transform: scale(1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+.form-transaksi {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.form-transaksi label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.form-transaksi input[type="text"],
+.form-transaksi input[type="tel"],
+.form-transaksi input[type="date"],
+.form-transaksi input[type="number"],
+.form-transaksi select {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.form-transaksi input[type="submit"] {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+}
+
+.form-transaksi input[type="submit"]:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.form-transaksi input[type="submit"]:active {
+    background-color: #004494;
+    transform: scale(1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.form-transaksi {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.form-transaksi label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.form-transaksi input[type="text"],
+.form-transaksi input[type="tel"],
+.form-transaksi input[type="date"],
+.form-transaksi input[type="number"],
+.form-transaksi select {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.form-transaksi input[type="submit"] {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+}
+
+.form-transaksi input[type="submit"]:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.form-transaksi input[type="submit"]:active {
+    background-color: #004494;
+    transform: scale(1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+.modal {
+    display: none; 
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.5s;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.close-button {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-content h3 {
+    margin-top: 0;
+}
+
+.modal-content table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1rem;
+}
+
+.modal-content table, .modal-content th, .modal-content td {
+    border: 1px solid #ddd;
+    padding: 0.5rem;
+    text-align: left;
+}
+
+.modal-content th {
+    background-color: #f1f1f1;
+}
+
+.modal-content .btn-pesan {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+}
+
+.modal-content .btn-pesan:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.modal-content .btn-pesan:active {
+    background-color: #004494;
+    transform: scale(1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+@media print {
+    body {
+        font-family: Arial, sans-serif;
+        margin: 2rem;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 1rem;
+    }
+
+    table, th, td {
+        border: 1px solid #ddd;
+        padding: 0.5rem;
+        text-align: left;
+    }
+
+    th {
+        background-color: #f1f1f1;
+    }
+
+    h2 {
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    .total {
+        font-weight: bold;
+    }
+
+    #confirmation,
+    .modal-content,
+    .close-button,
+    #confirmationModal {
+        display: none;
+    }
+}
